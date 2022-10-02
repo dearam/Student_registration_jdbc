@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainsceneController">
+   <children>
+      <Label layoutX="230.0" layoutY="22.0" text="STUDENT RESGISTRATION">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="27.0" layoutY="61.0" prefHeight="247.0" prefWidth="295.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="41.0" layoutY="99.0" text="NAME" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="147.0" text="MOBILE" textFill="WHITE" />
+            <Label layoutX="36.0" layoutY="188.0" text="COURSE" textFill="WHITE" />
+            <TextField fx:id="txtname" layoutX="101.0" layoutY="95.0" />
+            <TextField fx:id="txtmobile" layoutX="101.0" layoutY="143.0" />
+            <TextField fx:id="txtcourse" layoutX="101.0" layoutY="184.0" />
+            <Label layoutX="52.0" layoutY="54.0" text="ID" textFill="WHITE" />
+            <TextField fx:id="txtid" layoutX="101.0" layoutY="50.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="335.0" layoutY="63.0" prefHeight="295.0" prefWidth="327.0">
+        <columns>
+          <TableColumn fx:id="idcoulmn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="namecloumn" prefWidth="98.66668701171875" text="student name" />
+            <TableColumn fx:id="mobilecolumn" prefWidth="75.0" text="mobile" />
+            <TableColumn fx:id="coursecolumn" prefWidth="75.0" text="course" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnadd" layoutX="45.0" layoutY="345.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="82.0" text="add" />
+      <Button fx:id="btnupdate" layoutX="140.0" layoutY="345.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="82.0" text="update" />
+      <Button fx:id="btndelete" layoutX="230.0" layoutY="345.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="82.0" text="delete" />
+      <Accordion />
+   </children>
+</AnchorPane>
