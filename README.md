@@ -22,4 +22,6 @@
   <li>javac --module-path "javafx jar file path" --add-modules javafx.controls,javafx.fxml Main.java</li>
   <li>java --module-path "javafx jar file path" --add-modules javafx.controls,javafx.fxml Main</li>
 </ul>
+<h3>My other javafx project link</h3>
+<p>https://github.com/dearam/Login-with-Railway-javafx</p>
   
